@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-const users = require("./db.json")
+
 
 const app = express();
 
@@ -8,6 +8,15 @@ const app = express();
 app.use(cors());
 
 app.use(express.json()); // When we want to be able to accept JSON.
+
+// app.post("/api/sign", (req, res) => {
+//   const newDate = (monthIndex, day)
+//   const {type} = req.body
+//   const sign = ["Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo", "Libra", "Scorpio", "Sagittarius", "Capricorn", "Aquarius", "Pisces"]
+  
+  
+
+// })
 
 app.get("/api/compliment", (req, res) => {
   const compliments = ["Gee, you're a smart cookie!",

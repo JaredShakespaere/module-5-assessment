@@ -30,27 +30,23 @@
       <br>
     <!-- <form>
       <input
-        type= 'text'
-        id= 'firstName'
-        placeholder="First Name">
-      <input
-        type= "text"
-        id= "lastName"
-        placeholder="Last Name">
-      <input
-        type= "text"
-        id= "birthMonth"
-        placeholder="Birth Month">
-      <input
-        type="text"
-        id= "birthDay"
-        placeholder="Birth Day">
-      <button>Create Account</button>
-    </form>
+        type= 'date'
+        id= 'birthdate'
+        placeholder="Birthdate">
+      <button>Get Sign</button>
+    </form> -->
+
     <section id="zodiakSign"></section>
-   -->
+  
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script>
+      document.querySelector('form').onclick = function () {
+        axios.post("http://localhost:4000/api/sign", body)
+          .then(function (response){
+          const data = response.data;
+          alert(sign);
+      });
+    };
       document.getElementById("complimentButton").onclick = function () {
         axios.get("http://localhost:4000/api/compliment/")
             .then(function (response) {

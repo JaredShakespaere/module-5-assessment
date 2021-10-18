@@ -40,13 +40,13 @@
   
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script>
-      document.querySelector('form').onclick = function () {
-        axios.post("http://localhost:4000/api/sign", body)
-          .then(function (response){
-          const data = response.data;
-          alert(sign);
-      });
-    };
+      // document.querySelector('form').onclick = function () {
+      //   axios.post("http://localhost:4000/api/sign", body)
+      //     .then(function (response){
+      //     const data = response.data;
+      //     alert(sign);
+      // });
+    // };
       document.getElementById("complimentButton").onclick = function () {
         axios.get("http://localhost:4000/api/compliment/")
             .then(function (response) {

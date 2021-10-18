@@ -12,5 +12,13 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShakeyShack2844/module-5-assessment.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ShakeyShack2844/module-5-assessment/issues"
+  },
+  "homepage": "https://github.com/ShakeyShack2844/module-5-assessment#readme"
 }
